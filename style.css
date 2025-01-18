@@ -1,0 +1,542 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.cabecera__logo {
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+.presentacion__titulo {
+    margin-bottom: 0;
+}
+
+.redes__img {
+    flex-grow: 1;
+}
+
+.redes__img a {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.redes__img img {
+    width: 1rem;
+}
+
+.presentacion__subtitulo {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+}
+
+.presentacion h2 {
+    font-size: 2rem;
+}
+
+.redes {
+    display: flex;
+    margin: 0%;
+    padding: 0;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+
+
+.habilidades__icono,
+.habilidades__nombre,
+.aficiones__icono,
+.aficiones__nombre {
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.formacion__lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    gap: 3rem;
+}
+
+.formacion__elemento {
+
+    width: 100%;
+}
+
+.formacion__elemento div:nth-of-type(1) {
+    background: #ffffff;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacion__elemento div:nth-of-type(2) {
+    width: 100%;
+}
+
+.proyectos {
+    width: 90%;
+    margin: auto;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formacion__elemento img {
+    width: 30%;
+    height: 60%;
+}
+
+
+.formacion__elemento h3 {
+    margin-block-end: 0rem;
+    white-space: normal;
+    margin-block-start: 0;
+}
+
+
+.formacion__elemento p {
+    margin-block-start: 0rem;
+}
+
+.proyectos__contenedor {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.proyectos__contenedor:hover {
+    background: #00000024;
+}
+
+.proyectos__contenedor:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.proyectos__contenedor div:nth-of-type(1) img {
+    width: 100%;
+}
+
+.proyectos__contenedor div:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+    background: bisque;
+}
+
+.proyectos__contenedor div:nth-of-type(2) {
+    width: 100%;
+}
+
+.proyectos__boton {
+    background: #3789d6b5;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 0.3rem 2rem;
+}
+
+.proyectos__boton:hover {
+    background: #5a5b5bb5;
+}
+
+.proyectos__contenedor div:nth-of-type(2) * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.formacion {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.habilidades,
+.aficiones {
+    width: 90%;
+    margin: auto;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto {
+    width: 90%;
+    margin: auto;
+}
+
+.contacto__titulo {
+    text-align: center;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgb(198 198 198);
+}
+
+.contacto__formulario *:not(:last-child) {
+    width: 80%;
+    margin: auto;
+}
+
+.presentacion__foto {
+    width: 30%;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 15px 3px black;
+}
+
+.contacto__formulario * {
+    height: 3rem;
+    text-align: center;
+    font-family: none;
+    font-size: x-large;
+}
+
+.contacto__boton {
+    width: 20%;
+    border: none;
+    margin-left: 10%;
+    background: #272727;
+    color: #F5F5F5;
+    font-size: 100%;
+}
+
+.sobre-mi~section h2 {
+    border-bottom: 1px solid #000000;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-block-start: 1rem;
+}
+
+footer p {
+    margin: auto;
+}
+
+.habilidades__elemento,
+.aficiones__elemento {
+    background: #ffffff;
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.habilidades__lista,
+.aficiones__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+.navegacion__elemento:not(:last-child) {
+    display: none;
+}
+
+.cabecera div {
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__logo {
+    height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sobre-mi~section h2 {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .cabecera div {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+
+    .habilidades__lista,
+    .aficiones__lista {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 3rem;
+        gap: 5%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .habilidades__elemento,
+    .aficiones__elemento {
+        background: #ffffff;
+        width: 15rem;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    .cabecera__titulo {
+        margin: auto;
+    }
+
+    .formacion__elemento {
+        /* display: flex; */
+        /* height: 7rem; */
+        /* flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center; */
+        width: 20rem;
+    }
+
+    .formacion__lista {
+        gap: 3rem;
+        white-space: nowrap;
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: justify;
+        width: 90%;
+        align-items: center;
+        padding: inherit;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    .presentacion__contenedor {
+        width: 68%;
+    }
+
+    .formacion__icono {
+        width: 8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .sobre-mi {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+
+    .navegacion__elemento a:hover,
+    .redes__img a:hover,
+    .redes__img img:hover {
+        filter: opacity(.9) drop-shadow(0 0 0 #000000) drop-shadow(0 0 0 #000000);
+        color: #b6b6b6;
+    }
+
+    .proyectos__contenedor {
+        gap: 1rem;
+    }
+
+    .proyectos__contenedor div:nth-of-type(1) img {
+        width: auto;
+    }
+
+    .proyectos__contenedor div:nth-of-type(1) {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .proyectos__contenedor div:nth-of-type(2) {
+        width: 30%;
+    }
+
+    .habilidades__elemento:hover,
+    .aficiones__elemento:hover,
+    .formacion__elemento:hover {
+        box-shadow: 0px 0px 11px 3px #a6a6a6;
+        border-radius: 1rem;
+    }
+
+    .contacto__formulario *:not(:last-child):hover {
+        background: #cdcdcd;
+    }
+
+    .contacto__boton:hover {
+        background: #a30000;
+    }
+
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento:not(:last-child) {
+        display: initial;
+    }
+
+    .presentacion {
+        width: 90%;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    .habilidades__titulo,
+    .aficiones__titulo,
+    .formacion__titulo,
+    .proyectos__titulo {
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .habilidades__elemento,
+    .aficiones__elemento {
+        background: #ffffff;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+}

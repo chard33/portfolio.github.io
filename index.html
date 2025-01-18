@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- Menú -->
+    <header class="cabecera">
+        <div>
+            <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+            <h1 class="cabecera__titulo">Carlos Miranda</h1>
+        </div>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="presentacion">
+        <img class="presentacion__foto" src="assets/foto.png" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__titulo">Hola, mi nombre es Carlos y estoy estudiando Desarrollo de Software.</h2>
+            <p class="presentacion__subtitulo">Soy estudiante en la UnADM, donde me estoy formando como desarrollador de
+                software, para crear
+                soluciones con la programacion. Actualmente, estoy ampliando mis conocimientos en desarrollo web a
+                través de un curso del proyecto Oracle ONE en Alura Latam, con especialización en front-end.</p>
+            <ul class="redes">
+                <li class="redes__img"><a href="https://github.com/chard33">Github <img src="assets/arrow.png"
+                            alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.linkedin.com/in/carlos-miranda-268710201/">Linkedin <img
+                            src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="curriculo.pdf">Currículo <img src="assets/arrow.png" alt="Flecha"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mí</h2>
+        <p class="sobre-mi__texto">
+
+
+            Siempre me ha gustado la electricidad y la electrónica, áreas que me fascinan por la
+            manera en que funcionan. Ahora, he decidido enfocarme en el desarrollo de software, ya que me
+            apasiona la idea de crear programas que interactúen con hardware y permitan el control de dispositivos.
+            Estoy profundizando en esta área, explorando nuevas tecnologías y lenguajes de programación, con el objetivo
+            de seguir creciendo en el campo del desarrollo de software.
+
+        </p>
+        <!-- <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit,
+            volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
+            potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet
+            metus.</p> -->
+        <!-- Firma opcional -->
+        <!-- <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma"> -->
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/html.png" alt="HTML">
+                <p class="habilidades__nombre">HTML 5</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
+                <p class="habilidades__nombre">CSS</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
+                <p class="habilidades__nombre">JavaScript</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/react_icon.png" alt="React">
+                <p class="habilidades__nombre">React</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/java-ic.png" alt="JAVA">
+                <p class="habilidades__nombre">Java</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/spring_ic.png" alt="Spring Boot">
+                <p class="habilidades__nombre">Spring Boot</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/sql_ic.png" alt="SQL">
+                <p class="habilidades__nombre">Sql</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Aficiones -->
+    <section class="aficiones" id="aficiones">
+        <h2 class="aficiones__titulo">Aficiones</h2>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
+                <p class="aficiones__nombre">Patinaje</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
+                <p class="aficiones__nombre">Oír música</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
+                <p class="aficiones__nombre">Ver series</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <section class="formacion" id="formacion">
+        <h2 class="formacion__titulo">Formación académica</h2>
+        <ul class="formacion__lista">
+            <li class="formacion__elemento">
+                <div>
+                    <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                </div>
+                <div>
+                    <h3 class="formacion__nombre">Formación en Back-end</h3>
+                    <p class="formacion__detalle">2023 - Alura</p>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <div>
+                    <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                </div>
+                <div>
+                    <h3 class="formacion__nombre">Formación en Front-end</h3>
+                    <p class="formacion__detalle">2025 - Alura</p>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <div>
+                    <img class="formacion__icono" src="assets/UnADM.png" alt="UFRJ">
+                </div>
+                <div>
+                    <h3 class="formacion__nombre">Ingenieria en desarrollo de software</h3>
+                    <p class="formacion__detalle">En curso - UnADM</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__titulo">Experiencia Profesional</h2>
+        <div class="proyectos__contenedor">
+            <div>
+                <img src="./assets/captura.png" alt="Encriptador">
+            </div>
+            <div>
+                <h3 class="proyectos__nombre">Encriptador/Desencriptador de Mensajes</h3>
+                <p class="proyectos__descripcion">Aplicación web simple que permite encriptar y desencriptar mensajes.
+                </p>
+                <a class="proyectos__boton" href="https://github.com/chard33/challenge2024">Repo</a>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <div>
+                <img src="https://github.com/chard33/challengeOneForoAluraLatam/raw/main/src/main/resources/Captura.png"
+                    alt="Encriptador">
+            </div>
+            <div>
+                <h3 class="proyectos__nombre">Desafio alura-foro</h3>
+                <p class="proyectos__descripcion">Api foro, para la consulta y respuesta sobre temas de interes en los
+                    cursos vistos con validacion de sesion.</p>
+                <a class="proyectos__boton" href="https://github.com/chard33/challengeOneForoAluraLatam">Repo</a>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <div>
+                <img src="https://github.com/chard33/challengeOneHotelAluraLatam/raw/main/img/aluraHotel.gif"
+                    alt="Encriptador">
+            </div>
+            <div>
+                <h3 class="proyectos__nombre">Desafio Java Hotel Alura</h3>
+                <p class="proyectos__descripcion">Aplicacion de funcionalidad para llevar el control de las
+                    reservaciones hechas por sus clientes.</p>
+                <a class="proyectos__boton" href="https://github.com/chard33/challengeOneHotelAluraLatam">Repo</a>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <div>
+                <img src="https://github.com/chard33/Challenge-Back-End-Java--Conversor/raw/main/src/imagenes/modoR.gif"
+                    alt="Encriptador">
+            </div>
+            <div>
+                <h3 class="proyectos__nombre">Desafio Java Conversor - Alura</h3>
+                <p class="proyectos__descripcion">Desafio para el programa Alura - ONE, conversor de unidades de divisas
+                    y medidas, entre sí.</p>
+                <a class="proyectos__boton"
+                    href="https://github.com/chard33/Challenge-Back-End-Java--Conversor">Repo</a>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <div>
+                <img src="https://github.com/chard33/ejercicioPokeApi/assets/86166607/375a1867-8785-4396-ac99-73c77a31e59b"
+                    alt="PokeApi">
+            </div>
+            <div>
+                <h3 class="proyectos__nombre">Practica PokeApi</h3>
+                <p class="proyectos__descripcion">Practica de consumo de Api en aplicacion Java.</p>
+                <a class="proyectos__boton" href="https://github.com/chard33/ejercicioPokeApi">Repo</a>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <div>
+                <img src="assets/fotoAluraFlix.png"
+                    alt="AluraFlix">
+            </div>
+            <div>
+                <h3 class="proyectos__nombre">Desafio AluraFlix</h3>
+                <p class="proyectos__descripcion">Desafio para el programa Alura - ONE parte Front End con React</p>
+                <a class="proyectos__boton" href="https://github.com/chard33/Desafio-aluraFlix">Repo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <form class="contacto__formulario" action="https://formsubmit.co/ee082429e933939f09ce7d50a46d38cf"
+            method="POST">
+            <input class="contacto__campo" type="text" name="nombre" required placeholder="Nombre">
+            <input class="contacto__campo" type="email" name="email" required placeholder="Correo Electrónico">
+            <textarea class="contacto__campo contacto__campo--textarea" name="mensaje" rows="10" required
+                placeholder="Mensaje"></textarea>
+            <input type="hidden" name="_next" value="https://chard33.github.io/portafolio---Alura/">
+            <input type="hidden" name="_captcha" value="false">
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desarollado por Carlos Miranda - Alura</p>
+        <p>2024</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
